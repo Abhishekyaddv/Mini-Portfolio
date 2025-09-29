@@ -42,7 +42,7 @@
 }
 
 .dark-mode header {
-  background: url('/Assets/bg-img.gif');
+  background: url('Assets/bg-img.gif');
   background-position: center center;
   background-size: cover;      
   background-repeat: no-repeat; 

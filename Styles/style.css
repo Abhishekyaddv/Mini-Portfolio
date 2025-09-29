@@ -1,5 +1,5 @@
 body {
-  background: url('bg-tile.gif') repeat; 
+  /* background: url('bg-tile.gif') repeat;  */
   font-family: 'Monaco';
   font-size: 10px; 
   color: #957be4;
@@ -87,7 +87,7 @@ header {
   border-radius: 8px;
   padding: 15px; 
   position: relative; 
-  background-image: url('/Assets/bg-img.gif'); 
+  background-image: url('Assets/bg-img.gif'); 
   background-position: center center;
   background-size: cover;     
   background-repeat: no-repeat;  
