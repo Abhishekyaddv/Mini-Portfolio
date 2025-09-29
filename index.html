@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek's Webpage</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/darkstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Abhishek Yadav</h1>
+            <p class="tagline">Multipassionate creative</p>
+
+            <div class="button-container">
+            <button onclick="toggleDarkMode()">☾⋆˙⟡</button>
+
+            <button id="music-btn">♬⋆.˚</button>
+
+            
+            <audio id="bg-music" src="Assets/bg-music.mp3" loop></audio>
+        </header>
+
+        <div id="content">
+
+            <main id="blog">
+
+                <article>
+                    <h3><i class="fa-brands fa-github"></i> Github Account</h3>
+                    <p>
+                        <a href="https://github.com/Abhishekyaddv" target="_blank">My Projects</a><br>
+                        Sharing ideas to empower others.
+                    </p>
+                </article>
+
+                  <article>
+                    <h3><i class="fa-solid fa-file"></i> Resume </h3>
+                    <p>
+                        <a href="Abhishek Yadav-CV.pdf" target="_blank">View CV</a> 
+                        <br>
+                         My projects and past Experiences  
+                        
+                    </p>
+                </article>
+
+                 <article>
+                    <h3> <i class="fa-solid fa-envelope"></i> Contact Me</h3>
+                    <p>
+                        <a href="mailto:ay6293347@gmail.com">Hire Me</a>
+                        <br>
+                         Lets connect through Email 
+                        
+                    </p>
+                </article>
+
+                <article>
+                    <h3> <i class="fa-brands fa-linkedin"></i> LinkedIn </h3>
+                    <p>
+                        <a href="https://www.linkedin.com/in/abhishek-yaaddv/" target="_blank">Abhishek Yadav on LinkedIn</a><br>
+                        View Abhishek's recent activity, work experience. 
+                         
+                        
+                    </p>
+                </article>
+
+                
+    
+            </main>
+
+            <footer>      
+                <p>© 2025 <a href="https://www.linkedin.com/in/abhishek-yaaddv/">Abhishek Yadav</a></p>
+            </footer>
+
+        </div>
+    </div>
+
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+        
+
+        const musicBtn = document.getElementById('music-btn');
+        const music = document.getElementById('bg-music');
+
+        musicBtn.addEventListener('click', () => {
+            if (music.paused) {
+                music.play();
+                musicBtn.textContent = "⏸ ♬";
+            } else {
+                music.pause();
+                musicBtn.textContent = "♬⋆.˚";
+            }
+        });
+    </script>
+</body>
+</html>
